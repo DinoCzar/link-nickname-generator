@@ -10,6 +10,7 @@ const prefixName = [
 	'Lt. ',
 	'Prof. ',
 	'President ',
+    'Radioactive',
 	'',
 	'',
 	'',
@@ -49,56 +50,29 @@ const prefixName = [
 ];
 
 const firstName = [
-	'Doodle',
-	'Bugger',
-	'Strudel',
-	'Poodle',
-	'Noodle',
-	'Butter',
-	'Nut',
-	'Butt',
-	'Snugger',
-	'Snicker',
-	'Buggo',
-	'Snuggle',
-	'Strugger',
-	'Struggle',
-	'Jugger',
-	'',
-	'Fluffer',
-	'Nutter',
-	'Chunker',
+    'Link', 
+    'Linc',
+    'Lincoln',
+    'Linkin\'',
+    'Linker',
+    'Stinkin\'',
+    'Young',
+    'Snuggle',
+    'Chunker'
 ];
 const secondName = [
-	'Doodle',
-	'Bugger',
-	'Strudel',
-	'Poodle',
-	'Noodle',
-	'Butter',
-	'Nut',
-	'Butt',
-	'Wuggo',
-	'Wicker',
-	'Squash',
-	'Strudes',
-	'naut',
-	'Squasher',
-	'Nug',
-	'Snuggle',
-	'Bus',
-	'Strut',
-	'Jugger',
-	'Doods',
-	'Sauce',
-	'',
-	'Bot',
-	'Nuggo',
-	'Nutter',
-	'Fluff',
-	'Monster',
-	'Nuffer',
-	'Muffin',
+	'Park',
+    'Logs', 
+    'Log',
+    'Link',
+    'Logger',
+    'Dink',
+    'Linc',
+    'Dinc',
+    'Monster',
+    'Chunker',
+    'Monkey',
+    'Logs'
 ];
 
 const content = document.querySelector('#content');
@@ -109,10 +83,8 @@ button.addEventListener('click', () => {
 	let first = firstName[Math.floor(Math.random() * firstName.length)];
 	let second = secondName[Math.floor(Math.random() * secondName.length)];
 	if (first === '' && second === '') {
-		return (content.textContent = 'The Noodler');
-	} else if (second === 'naut') {
-		return (content.textContent = 'The ' + first + second);
-	}
+		return (content.textContent = 'Link-a-dink');
+	} else
 	if (first === second) {
 		return (content.textContent = 'The ' + first);
 	} else {
